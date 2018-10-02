@@ -81,42 +81,40 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     public Double visitCalculate(simpleCalcParser.CalculateContext ctx) {
 
         switch (ctx.op.getText()) {
-            case "+":
-                return visit(ctx.e1) + visit(ctx.e2);
-            case "*":
-                return visit(ctx.e1) * visit(ctx.e2);
-            case "-":
-                return visit(ctx.e1) - visit(ctx.e2);
-
-                default:
-                    return 5.0;
-
-        }
+            case "+":return visit(ctx.e1) + visit(ctx.e2);
+            case "*":return visit(ctx.e1) * visit(ctx.e2);
+            case "-":return visit(ctx.e1) - visit(ctx.e2);
+            default: return visit(ctx.e1) / visit(ctx.e2);
+         }
 
     }
 
 
 
-    public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
-        //  return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-        return null;
-    }
+
     public Double visitVar(simpleCalcParser.VarContext ctx) {
-        //  return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-        return null;
-    }
-/*
-    public Double visitCond(simpleCondParser.CondContext ctx) {
-        return null;
+
+        //return Double.parseDouble(ctx.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
+
+        return 1.0;
     }
 
-    public Double visitStmt(simpleStmtParser.CondContext ctx) {
-        return null;
+     public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
+         return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
+
     }
 
-    / Double visitStmt(simpleStmtParser.CondContext ctx) {
-        return null;
+    /*
+
+    public Double visitCond(simpleCalcParser.CondContext ctx) {
+        return 1.0;
+    }
+
+    public Double visitStmt(simpleCalcParser.StmtContext ctx) {
+        return 1.0;
+    }
+
+    public Double visitProg(simpleCalcParser.ProgContext ctx) {
+        return 1.0;
     }*/
-
-
 }

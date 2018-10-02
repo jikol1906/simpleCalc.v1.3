@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f3880dc-4dd4-480c-95b4-121d9f783561" name="Default" comment="" />
+    <list default="true" id="4f3880dc-4dd4-480c-95b4-121d9f783561" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$AssignContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$AssignContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$CalculateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$CalculateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ConstantContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ConstantContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ParenthesisContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ParenthesisContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StartContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$VarContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$VarContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser$VariableContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$VariableContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalcVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalc_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc_input.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,29 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="simpleCalc.g4" pinned="false" current-in-tab="false">
+      <file leaf-file-name="simpleCalc.g4" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simpleCalc_input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="30">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -43,8 +55,42 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="23">
+              <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2277#2278#0" expanded="true" />
+                <element signature="e#2312#2313#0" expanded="true" />
+                <element signature="e#2387#2388#0" expanded="true" />
+                <element signature="e#2442#2443#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpleCalcBaseVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleCalcBaseVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="95" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpleCalc_input.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -52,8 +98,8 @@
       <file leaf-file-name="simpleCalcVisitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleCalcVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="34" selection-start-line="34" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="293">
+              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -74,15 +120,18 @@
       <find>cond</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/simpleCalc_input.txt" />
-        <option value="$PROJECT_DIR$/simpleCalc.g4" />
-        <option value="$PROJECT_DIR$/main.java" />
         <option value="$PROJECT_DIR$/simpleCalcVisitor.java" />
+        <option value="$PROJECT_DIR$/main.java" />
+        <option value="$PROJECT_DIR$/simpleCalc.g4" />
+        <option value="$PROJECT_DIR$/simpleCalc_input.txt" />
       </list>
     </option>
   </component>
@@ -111,11 +160,12 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
+    <option name="x" value="65" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -228,15 +278,15 @@
       <option name="presentableId" value="Default" />
       <updated>1537881601917</updated>
       <workItem from="1537881611269" duration="375000" />
-      <workItem from="1537881993183" duration="8133000" />
+      <workItem from="1537881993183" duration="11795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8508000" />
+    <option name="totallyTimeSpent" value="12170000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="65" y="23" width="1280" height="732" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -248,14 +298,14 @@
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.11640625" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Floobits" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37637794" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="7" weight="0.32827586" />
+      <window_info active="true" anchor="bottom" id="ANTLR Preview" order="7" visible="true" weight="0.32755905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -278,15 +328,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/main.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -315,6 +357,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2387#2388#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -337,38 +386,52 @@
         <state relative-caret-position="-333" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
+    <entry file="file://$PROJECT_DIR$/simpleCalcVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="293">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalcBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="95" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleCalcVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="34" selection-start-line="34" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="23">
+          <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2387#2388#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
