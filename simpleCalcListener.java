@@ -115,6 +115,18 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 */
 	void exitVar(simpleCalcParser.VarContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code Statement}
+	 * labeled alternative in {@link simpleCalcParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatement(simpleCalcParser.StatementContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Statement}
+	 * labeled alternative in {@link simpleCalcParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatement(simpleCalcParser.StatementContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code Calculate}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
 	 * @param ctx the parse tree

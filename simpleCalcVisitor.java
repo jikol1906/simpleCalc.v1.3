@@ -74,6 +74,13 @@ public interface simpleCalcVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVar(simpleCalcParser.VarContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code Statement}
+	 * labeled alternative in {@link simpleCalcParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStatement(simpleCalcParser.StatementContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code Calculate}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
 	 * @param ctx the parse tree

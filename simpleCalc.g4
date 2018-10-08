@@ -1,6 +1,6 @@
 grammar simpleCalc;
  
-start   : as+=assign*  e=expr EOF ;
+start   : as+=assign*   e=expr EOF ;
 
 assign  : x=ID '=' e=expr ;
 
@@ -8,13 +8,10 @@ assign  : x=ID '=' e=expr ;
 prog : stmt ;
 
 stmt: VAR '=' expr
-    | IF(cond) prog
-    | IF(cond) prog ELSE prog
-    | WHILE(cond) expr
+    | IF'('cond')' prog
+    | IF'('cond')' prog ELSE prog
+    | WHILE'('cond')' expr
     ;
-
-
-
 
 stmts: stmt  ;
 
@@ -32,6 +29,7 @@ expr: e1=expr op=OP1 e2=expr # Calculate
 	| x=ID            # Variable
 	| '(' e=expr ')'  # Parenthesis
 	| VAR   #Var
+	| stmts #Statement
 	;
 
 OP1 : ('*'|'/') ;
