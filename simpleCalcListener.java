@@ -27,6 +27,46 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 */
 	void exitAssign(simpleCalcParser.AssignContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link simpleCalcParser#prog}.
+	 * @param ctx the parse tree
+	 */
+	void enterProg(simpleCalcParser.ProgContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link simpleCalcParser#prog}.
+	 * @param ctx the parse tree
+	 */
+	void exitProg(simpleCalcParser.ProgContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link simpleCalcParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterStmt(simpleCalcParser.StmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link simpleCalcParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitStmt(simpleCalcParser.StmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link simpleCalcParser#stmts}.
+	 * @param ctx the parse tree
+	 */
+	void enterStmts(simpleCalcParser.StmtsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link simpleCalcParser#stmts}.
+	 * @param ctx the parse tree
+	 */
+	void exitStmts(simpleCalcParser.StmtsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link simpleCalcParser#cond}.
+	 * @param ctx the parse tree
+	 */
+	void enterCond(simpleCalcParser.CondContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link simpleCalcParser#cond}.
+	 * @param ctx the parse tree
+	 */
+	void exitCond(simpleCalcParser.CondContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code Parenthesis}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
 	 * @param ctx the parse tree

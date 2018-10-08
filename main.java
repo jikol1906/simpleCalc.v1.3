@@ -104,17 +104,25 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
     }
 
-    /*
+
 
     public Double visitCond(simpleCalcParser.CondContext ctx) {
         return 1.0;
     }
 
+
+
     public Double visitStmt(simpleCalcParser.StmtContext ctx) {
         return 1.0;
     }
 
+    public Double visitStmts(simpleCalcParser.StmtsContext ctx) {
+            return 1.0;
+    }
+
+
+
     public Double visitProg(simpleCalcParser.ProgContext ctx) {
         return 1.0;
-    }*/
+    }
 }

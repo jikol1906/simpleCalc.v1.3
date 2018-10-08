@@ -5,26 +5,26 @@ start   : as+=assign*  e=expr EOF ;
 assign  : x=ID '=' e=expr ;
 
 
-//prog : stmt ;
+prog : stmt ;
 
-/*stmt: VAR '=' expr
+stmt: VAR '=' expr
     | IF(cond) prog
     | IF(cond) prog ELSE prog
-    | WHILE(cond) prog
+    | WHILE(cond) expr
     ;
 
-    */
 
-/*
+
+
 stmts: stmt  ;
-*/
 
 
-/*cond: expr '==' expr
+
+cond: expr '==' expr
     | expr '!==' expr
     | cond '&&' cond
     | cond '||' cond
-    ;*/
+    ;
 
 expr: e1=expr op=OP1 e2=expr # Calculate
     | e1=expr op=OP2 e2=expr # Calculate
@@ -39,7 +39,7 @@ OP2 : ('+'|'-') ;
 NUM 	: ('0'..'9')+ ;
 ID	: ('A'..'Z'|'a'..'z')+ ;
 WHITESPACE : [ \n\t\r]+ -> skip;
-COMMENT : '//' ~('\n')* -> skip;
+COMMENT :    '//' ~('\n')* -> skip;
 VAR : 'var';
 CONST : 'const';
 IF : 'if';
