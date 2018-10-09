@@ -82,6 +82,13 @@ public interface simpleCalcVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStatement(simpleCalcParser.StatementContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code LogOp}
+	 * labeled alternative in {@link simpleCalcParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogOp(simpleCalcParser.LogOpContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code Calculate}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
 	 * @param ctx the parse tree

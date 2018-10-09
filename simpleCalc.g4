@@ -28,8 +28,8 @@ expr: e1=expr op=OP1 e2=expr # Calculate
 	| stmts #Statement
 	| e1=expr  op='==' e2=expr #Comparison
         | e1=expr op='!=' e2=expr #Comparison
-        | e1=expr op='&&' e2=expr #Comparison
-        | e1=expr op='||' e2=expr #Comparison
+        | e1=expr op='&&' e2=expr #LogOp
+        | e1=expr op='||' e2=expr #LogOp
 	;
 
 OP1 : ('*'|'/') ;

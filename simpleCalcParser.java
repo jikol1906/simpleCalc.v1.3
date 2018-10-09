@@ -27,7 +27,7 @@ public class simpleCalcParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'='", "'('", "')'", "'=='", "'!=='", "'&&'", "'||'", null, null, 
+		null, "'='", "'('", "')'", "'=='", "'!='", "'&&'", "'||'", null, null, 
 		null, null, null, null, "'var'", "'const'", "'if'", "'else'", "'while'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
@@ -540,6 +540,31 @@ public class simpleCalcParser extends Parser {
 			else return visitor.visitChildren(this);
 		}
 	}
+	public static class LogOpContext extends ExprContext {
+		public ExprContext e1;
+		public Token op;
+		public ExprContext e2;
+		public List<ExprContext> expr() {
+			return getRuleContexts(ExprContext.class);
+		}
+		public ExprContext expr(int i) {
+			return getRuleContext(ExprContext.class,i);
+		}
+		public LogOpContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof simpleCalcListener ) ((simpleCalcListener)listener).enterLogOp(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof simpleCalcListener ) ((simpleCalcListener)listener).exitLogOp(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof simpleCalcVisitor ) return ((simpleCalcVisitor<? extends T>)visitor).visitLogOp(this);
+			else return visitor.visitChildren(this);
+		}
+	}
 	public static class CalculateContext extends ExprContext {
 		public ExprContext e1;
 		public Token op;
@@ -703,28 +728,28 @@ public class simpleCalcParser extends Parser {
 						break;
 					case 5:
 						{
-						_localctx = new ComparisonContext(new ExprContext(_parentctx, _parentState));
-						((ComparisonContext)_localctx).e1 = _prevctx;
+						_localctx = new LogOpContext(new ExprContext(_parentctx, _parentState));
+						((LogOpContext)_localctx).e1 = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_expr);
 						setState(77);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
 						setState(78);
-						((ComparisonContext)_localctx).op = match(T__5);
+						((LogOpContext)_localctx).op = match(T__5);
 						setState(79);
-						((ComparisonContext)_localctx).e2 = expr(3);
+						((LogOpContext)_localctx).e2 = expr(3);
 						}
 						break;
 					case 6:
 						{
-						_localctx = new ComparisonContext(new ExprContext(_parentctx, _parentState));
-						((ComparisonContext)_localctx).e1 = _prevctx;
+						_localctx = new LogOpContext(new ExprContext(_parentctx, _parentState));
+						((LogOpContext)_localctx).e1 = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_expr);
 						setState(80);
 						if (!(precpred(_ctx, 1))) throw new FailedPredicateException(this, "precpred(_ctx, 1)");
 						setState(81);
-						((ComparisonContext)_localctx).op = match(T__6);
+						((LogOpContext)_localctx).op = match(T__6);
 						setState(82);
-						((ComparisonContext)_localctx).e2 = expr(2);
+						((LogOpContext)_localctx).e2 = expr(2);
 						}
 						break;
 					}

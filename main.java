@@ -106,10 +106,8 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     public Double visitComparison(simpleCalcParser.ComparisonContext ctx) {
 
         try {
-
             int e1 = Integer.parseInt(ctx.e1.getText());
             int e2 = Integer.parseInt(ctx.e2.getText());
-
             switch (ctx.op.getText()) {
                 case "==":
                     return e1 == e2 ? 1.0 : 0.0;
@@ -120,8 +118,28 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
             }
 
         } catch (NumberFormatException ex) {
-            default:
                 return 0.0;
+        }
+
+    }
+
+
+    public Double visitLogOp(simpleCalcParser.LogOpContext ctx) {
+        try {
+            Double e1 = Double.parseDouble(ctx.e1.getText());
+            Double e2 = Double.parseDouble(ctx.e2.getText());
+            switch (ctx.op.getText()) {
+                case "&&":
+                    return e1 - e2 == 0.0 ? 1.0 : 0.0;
+                case "||":
+                    return e1==1.0 || e2==1.0 ? 1.0 : 0.0;
+                default:
+                    return 0.0;
+            }
+
+        } catch (NumberFormatException ex) {
+                return 2.0;
+
         }
 
     }
