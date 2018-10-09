@@ -107,7 +107,7 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     public Double visitComparison(simpleCalcParser.ComparisonContext ctx) {
         switch (ctx.op.getText()) {
             case "==": return ctx.e1.getText().equals(ctx.e2.getText()) ? 1.0:0.0;
-            case "!=": return ctx.e1.getText().equals(ctx.e2.getText()) ? 0.0:1git.0;
+            case "!=": return ctx.e1.getText().equals(ctx.e2.getText()) ? 0.0:1.0;
 
             default: return  0.0;
         }
