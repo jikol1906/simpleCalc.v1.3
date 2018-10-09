@@ -1,23 +1,27 @@
 grammar simpleCalc;
  
-start   : as+=assign*   e=expr EOF ;
+start   : as+=prog*   e=expr EOF ;
 
-assign  : x=ID '=' e=expr ;
 
 
 prog : stmt ;
 
-stmt: VAR '=' expr
-    | IF'('expr')' prog
-    | IF'('expr')' prog ELSE prog
-    | WHILE'('expr')' expr
+stmt:
+     IF '(' cond ')' prog
+    | WHILE '('cond')' prog
+   | ID '=' expr
     ;
 
 stmts: stmt  ;
+assign  : x=ID '=' e=expr ;
 
 
+cond:     e1=expr  op='==' e2=expr #Comparison
+        | e1=expr op='!=' e2=expr #Comparison
+        | e1=cond op='&&' e2=cond #LogOp
+        | e1=cond op='||' e2=cond #LogOp
 
-
+;
 
 expr: e1=expr op=OP1 e2=expr # Calculate
     | e1=expr op=OP2 e2=expr # Calculate
@@ -26,10 +30,7 @@ expr: e1=expr op=OP1 e2=expr # Calculate
 	| '(' e=expr ')'  # Parenthesis
 	| VAR   #Var
 	| stmts #Statement
-	| e1=expr  op='==' e2=expr #Comparison
-        | e1=expr op='!=' e2=expr #Comparison
-        | e1=expr op='&&' e2=expr #LogOp
-        | e1=expr op='||' e2=expr #LogOp
+
 	;
 
 OP1 : ('*'|'/') ;
@@ -43,4 +44,3 @@ CONST : 'const';
 IF : 'if';
 ELSE : 'else';
 WHILE : 'while';
-

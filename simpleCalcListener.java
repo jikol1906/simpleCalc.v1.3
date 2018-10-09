@@ -57,6 +57,30 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 */
 	void exitStmts(simpleCalcParser.StmtsContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code Comparison}
+	 * labeled alternative in {@link simpleCalcParser#cond}.
+	 * @param ctx the parse tree
+	 */
+	void enterComparison(simpleCalcParser.ComparisonContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Comparison}
+	 * labeled alternative in {@link simpleCalcParser#cond}.
+	 * @param ctx the parse tree
+	 */
+	void exitComparison(simpleCalcParser.ComparisonContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code LogOp}
+	 * labeled alternative in {@link simpleCalcParser#cond}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogOp(simpleCalcParser.LogOpContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code LogOp}
+	 * labeled alternative in {@link simpleCalcParser#cond}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogOp(simpleCalcParser.LogOpContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code Parenthesis}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
 	 * @param ctx the parse tree
@@ -80,18 +104,6 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitVariable(simpleCalcParser.VariableContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code Comparison}
-	 * labeled alternative in {@link simpleCalcParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterComparison(simpleCalcParser.ComparisonContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code Comparison}
-	 * labeled alternative in {@link simpleCalcParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitComparison(simpleCalcParser.ComparisonContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Constant}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
@@ -128,18 +140,6 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStatement(simpleCalcParser.StatementContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code LogOp}
-	 * labeled alternative in {@link simpleCalcParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterLogOp(simpleCalcParser.LogOpContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code LogOp}
-	 * labeled alternative in {@link simpleCalcParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitLogOp(simpleCalcParser.LogOpContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Calculate}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
