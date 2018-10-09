@@ -57,16 +57,6 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 */
 	void exitStmts(simpleCalcParser.StmtsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link simpleCalcParser#cond}.
-	 * @param ctx the parse tree
-	 */
-	void enterCond(simpleCalcParser.CondContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link simpleCalcParser#cond}.
-	 * @param ctx the parse tree
-	 */
-	void exitCond(simpleCalcParser.CondContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code Parenthesis}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
 	 * @param ctx the parse tree
@@ -90,6 +80,18 @@ public interface simpleCalcListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitVariable(simpleCalcParser.VariableContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Comparison}
+	 * labeled alternative in {@link simpleCalcParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterComparison(simpleCalcParser.ComparisonContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Comparison}
+	 * labeled alternative in {@link simpleCalcParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitComparison(simpleCalcParser.ComparisonContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Constant}
 	 * labeled alternative in {@link simpleCalcParser#expr}.
