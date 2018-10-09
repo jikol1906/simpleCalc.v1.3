@@ -108,7 +108,7 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
         try {
 
             int e1 = Integer.parseInt(ctx.e1.getText());
-            int e2 = Integer.parseInt(ctx.e1.getText());
+            int e2 = Integer.parseInt(ctx.e2.getText());
 
             switch (ctx.op.getText()) {
                 case "==":
