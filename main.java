@@ -59,7 +59,6 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     }
 
 
-
     public Double visitAssign(simpleCalcParser.AssignContext ctx) {
         Double d = visit(ctx.e);
         env.setVariable(ctx.x.getText(), d);
@@ -71,25 +70,25 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     }
 
 
-
     public Double visitVariable(simpleCalcParser.VariableContext ctx) {
         return env.getVariable(ctx.x.getText());
     }
 
 
-
     public Double visitCalculate(simpleCalcParser.CalculateContext ctx) {
 
         switch (ctx.op.getText()) {
-            case "+":return visit(ctx.e1) + visit(ctx.e2);
-            case "*":return visit(ctx.e1) * visit(ctx.e2);
-            case "-":return visit(ctx.e1) - visit(ctx.e2);
-            default: return visit(ctx.e1) / visit(ctx.e2);
-         }
+            case "+":
+                return visit(ctx.e1) + visit(ctx.e2);
+            case "*":
+                return visit(ctx.e1) * visit(ctx.e2);
+            case "-":
+                return visit(ctx.e1) - visit(ctx.e2);
+            default:
+                return visit(ctx.e1) / visit(ctx.e2);
+        }
 
     }
-
-
 
 
     public Double visitVar(simpleCalcParser.VarContext ctx) {
@@ -99,26 +98,30 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
         return 1.0;
     }
 
-     public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
-         return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
+    public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
+        return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
 
     }
 
     public Double visitComparison(simpleCalcParser.ComparisonContext ctx) {
 
-        try{
+        try {
 
-           int e1 = Integer.parseInt(ctx.e1.getText());
-           int e2 = Integer.parseInt(ctx.e1.getText());
+            int e1 = Integer.parseInt(ctx.e1.getText());
+            int e2 = Integer.parseInt(ctx.e1.getText());
 
             switch (ctx.op.getText()) {
-                case "==": return e1 ==e2 ? 1.0:0.0;
-                case "!=": return e1 != e2 ? 1.0:0.0;
-                default: return  0.0;
+                case "==":
+                    return e1 == e2 ? 1.0 : 0.0;
+                case "!=":
+                    return e1 != e2 ? 1.0 : 0.0;
+                default:
+                    return 0.0;
             }
 
-        }catch (NumberFormatException ex) {
-            default: return  0.0;
+        } catch (NumberFormatException ex) {
+            default:
+                return 0.0;
         }
 
     }
@@ -128,7 +131,7 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     }
 
     public Double visitStmts(simpleCalcParser.StmtsContext ctx) {
-            return 1.0;
+        return 1.0;
     }
 
     public Double visitProg(simpleCalcParser.ProgContext ctx) {
