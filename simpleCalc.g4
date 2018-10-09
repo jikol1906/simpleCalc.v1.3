@@ -27,7 +27,7 @@ expr: e1=expr op=OP1 e2=expr # Calculate
 	| VAR   #Var
 	| stmts #Statement
 	| e1=expr  op='==' e2=expr #Comparison
-        | e1=expr op='!==' e2=expr #Comparison
+        | e1=expr op='!=' e2=expr #Comparison
         | e1=expr op='&&' e2=expr #Comparison
         | e1=expr op='||' e2=expr #Comparison
 	;
