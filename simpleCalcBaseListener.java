@@ -75,18 +75,6 @@ public class simpleCalcBaseListener implements simpleCalcListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCond(simpleCalcParser.CondContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCond(simpleCalcParser.CondContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterParenthesis(simpleCalcParser.ParenthesisContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -106,6 +94,18 @@ public class simpleCalcBaseListener implements simpleCalcListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitVariable(simpleCalcParser.VariableContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterComparison(simpleCalcParser.ComparisonContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitComparison(simpleCalcParser.ComparisonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

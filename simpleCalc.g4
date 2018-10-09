@@ -8,20 +8,16 @@ assign  : x=ID '=' e=expr ;
 prog : stmt ;
 
 stmt: VAR '=' expr
-    | IF'('cond')' prog
-    | IF'('cond')' prog ELSE prog
-    | WHILE'('cond')' expr
+    | IF'('expr')' prog
+    | IF'('expr')' prog ELSE prog
+    | WHILE'('expr')' expr
     ;
 
 stmts: stmt  ;
 
 
 
-cond: expr '==' expr
-    | expr '!==' expr
-    | cond '&&' cond
-    | cond '||' cond
-    ;
+
 
 expr: e1=expr op=OP1 e2=expr # Calculate
     | e1=expr op=OP2 e2=expr # Calculate
@@ -30,6 +26,10 @@ expr: e1=expr op=OP1 e2=expr # Calculate
 	| '(' e=expr ')'  # Parenthesis
 	| VAR   #Var
 	| stmts #Statement
+	| e1=expr  op='==' e2=expr #Comparison
+        | e1=expr op='!==' e2=expr #Comparison
+        | e1=expr op='&&' e2=expr #Comparison
+        | e1=expr op='||' e2=expr #Comparison
 	;
 
 OP1 : ('*'|'/') ;
