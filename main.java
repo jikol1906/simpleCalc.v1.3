@@ -4,6 +4,7 @@ import org.antlr.v4.runtime.tree.*;
 import org.antlr.v4.runtime.CharStreams;
 
 import java.io.IOException;
+import java.util.List;
 
 public class main {
     public static void main(String[] args) throws IOException {
@@ -36,7 +37,7 @@ public class main {
 
         // Construct an interpreter and run it on the parse tree
         Interpreter interpreter = new Interpreter();
-        Double result = interpreter.visit(parseTree);
+        AST result = interpreter.visit(parseTree);
 
         System.out.println("The result is: " + result);
     }
@@ -47,11 +48,11 @@ public class main {
 // This is parameterized over a return type "<T>" which is in our case
 // simply a Double.
 
-class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalcVisitor<Double> {
+class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVisitor<AST> {
 
     static Environment env = new Environment();
 
-    public Double visitStart(simpleCalcParser.StartContext ctx) {
+    public AST visitStart(simpleCalcParser.StartContext ctx) {
         for (simpleCalcParser.ProgContext a : ctx.as) {
             visit(a);
         }
@@ -59,46 +60,42 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     }
 
 
-    public Double visitAssign(simpleCalcParser.AssignContext ctx) {
-        Double d = visit(ctx.e);
+    public AST visitAssign(simpleCalcParser.AssignContext ctx) {
+        AST d = visit(ctx.e);
         env.setVariable(ctx.x.getText(), d);
         return d;
     }
 
-    public Double visitParenthesis(simpleCalcParser.ParenthesisContext ctx) {
+    public AST visitParenthesis(simpleCalcParser.ParenthesisContext ctx) {
         return visit(ctx.e);
     }
 
 
-    public Double visitVariable(simpleCalcParser.VariableContext ctx) {
-        return env.getVariable(ctx.x.getText());
+    public AST visitVariable(simpleCalcParser.VariableContext ctx) {
+        return new Variable(ctx.x.getText());
     }
 
 
-    public Double visitCalculate(simpleCalcParser.CalculateContext ctx) {
+    public AST visitCalculate(simpleCalcParser.CalculateContext ctx) {
 
         switch (ctx.op.getText()) {
             case "+":
-                return visit(ctx.e1) + visit(ctx.e2);
+                return new Addition((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
             case "*":
-                return visit(ctx.e1) * visit(ctx.e2);
+                return new Multiplication((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
             case "-":
-                return visit(ctx.e1) - visit(ctx.e2);
+                return new Subtraction((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
             default:
-                return visit(ctx.e1) / visit(ctx.e2);
+                return new Division((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
         }
 
     }
 
-    public String visitVar(simpleCalcParser.VarContext ctx) {
-        return ctx.getText();
+    public AST visitConstant(simpleCalcParser.ConstantContext ctx) {
+        return new Constant(Double.parseDouble(ctx.n.getText())); // new Double(ctx.NUM()); // Integer.parseInt(string);
     }
 
-    public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
-        return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-    }
-
-    public Double visitComparison(simpleCalcParser.ComparisonContext ctx) {
+    public AST visitComparison(simpleCalcParser.ComparisonContext ctx) {
 
         try {
             int e1 = Integer.parseInt(ctx.e1.getText());
@@ -118,10 +115,10 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
     }
 
-    public Double visitLogOp(simpleCalcParser.LogOpContext ctx) {
+    public AST visitLogOp(simpleCalcParser.LogOpContext ctx) {
         try {
-            Double e1 = Double.parseDouble(ctx.e1.getText());
-            Double e2 = Double.parseDouble(ctx.e2.getText());
+            AST e1 = Double.parseDouble(ctx.e1.getText());
+            AST e2 = Double.parseDouble(ctx.e2.getText());
             switch (ctx.op.getText()) {
                 case "&&":
                     return e1 - e2 == 0.0 ? 1.0 : 0.0;
@@ -138,21 +135,141 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
     }
 
-    public Double visitStmt(simpleCalcParser.StmtContext ctx) {
+    public AST visitStmt(simpleCalcParser.StmtContext ctx) {
         return 1.0;
     }
 
-    public Double visitStmts(simpleCalcParser.StmtsContext ctx) {
+    public AST visitStmts(simpleCalcParser.StmtsContext ctx) {
         return 1.0;
     }
 
-    public Double visitProg(simpleCalcParser.ProgContext ctx) {
+    public AST visitProg(simpleCalcParser.ProgContext ctx) {
         return 1.0;
     }
 
-    public Double visitStatement(simpleCalcParser.StatementContext ctx) {
+    public AST visitStatement(simpleCalcParser.StatementContext ctx) {
         return 1.0;
     }
 
 
+}
+
+abstract class AST {
+    abstract public double eval(Environment env);
+}
+
+class Start extends AST {
+    public List<Assignment> a;
+    public Expr e;
+
+    Start(List<Assignment> a, Expr e) {
+        this.a = a;
+        this.e = e;
+    }
+
+    public double eval(Environment env) {
+        for (Assignment assign : a)
+            assign.eval(env);
+        return e.eval(env);
+    }
+}
+
+class Assignment extends AST {
+    public String varname;
+    public Expr e;
+
+    Assignment(String varname, Expr e) {
+        this.varname = varname;
+        this.e = e;
+    }
+
+    public double eval(Environment env) {
+        double d = e.eval(env);
+        env.setVariable(varname, d);
+        return d;
+    }
+}
+
+abstract class Expr extends AST {
+
+}
+
+class Addition extends Expr {
+    public Expr e1;
+    public Expr e2;
+
+    Addition(Expr e1, Expr e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public double eval(Environment env) {
+        return e1.eval(env) + e2.eval(env);
+    }
+}
+
+class Subtraction extends Expr {
+    public Expr e1;
+    public Expr e2;
+
+    Subtraction(Expr e1, Expr e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public double eval(Environment env) {
+        return e1.eval(env) - e2.eval(env);
+    }
+}
+
+class Multiplication extends Expr {
+    public Expr e1;
+    public Expr e2;
+
+    Multiplication(Expr e1, Expr e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public double eval(Environment env) {
+        return e1.eval(env) * e2.eval(env);
+    }
+}
+
+class Division extends Expr {
+    public Expr e1;
+    public Expr e2;
+
+    Division(Expr e1, Expr e2) {
+        this.e1 = e1;
+        this.e2 = e2;
+    }
+
+    public double eval(Environment env) {
+        return e1.eval(env) / e2.eval(env);
+    }
+}
+
+class Variable extends Expr {
+    public String varname;
+
+    Variable(String varname) {
+        this.varname = varname;
+    }
+
+    public double eval(Environment env) {
+        return env.getVariable(varname);
+    }
+}
+
+class Constant extends Expr {
+    public double d;
+
+    Constant(double d) {
+        this.d = d;
+    }
+
+    public double eval(Environment env) {
+        return d;
+    }
 }

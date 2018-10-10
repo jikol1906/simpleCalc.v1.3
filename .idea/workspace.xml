@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3880dc-4dd4-480c-95b4-121d9f783561" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.floo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flooignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.v1.3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.v1.3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.g4" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,25 +46,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="floo" value="6" />
-          <entry key="java" value="12" />
+          <entry key="java" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="110" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="floo" value="2" />
           <entry key="flooignore" value="1" />
+          <entry key="java" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="Floobits file" value="1" />
+          <entry key="JAVA" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
         </counts>
@@ -87,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="423">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -96,19 +89,49 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+            <state relative-caret-position="286">
+              <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2276#2277#0" expanded="true" />
-                <element signature="e#2311#2312#0" expanded="true" />
-                <element signature="e#2385#2386#0" expanded="true" />
-                <element signature="e#2440#2441#0" expanded="true" />
+                <element signature="e#2275#2276#0" expanded="true" />
+                <element signature="e#2310#2311#0" expanded="true" />
+                <element signature="e#2382#2383#0" expanded="true" />
+                <element signature="e#2434#2435#0" expanded="true" />
                 <element signature="method#visitCalculate#0;class#Interpreter#0" />
-                <element signature="e#2937#2938#0" expanded="true" />
-                <element signature="e#2975#2976#0" expanded="true" />
                 <element signature="method#visitComparison#0;class#Interpreter#0" />
                 <element signature="method#visitLogOp#0;class#Interpreter#0" />
+                <element signature="e#4355#4356#0" expanded="true" />
+                <element signature="e#4381#4382#0" expanded="true" />
+                <element signature="e#4448#4449#0" expanded="true" />
+                <element signature="e#4474#4475#0" expanded="true" />
+                <element signature="e#4539#4540#0" expanded="true" />
+                <element signature="e#4565#4566#0" expanded="true" />
+                <element signature="e#4640#4641#0" expanded="true" />
+                <element signature="e#4666#4667#0" expanded="true" />
+                <element signature="class#AST#0" />
+                <element signature="class#Assignment#0" />
+                <element signature="class#Addition#0" />
+                <element signature="e#5607#5608#0" expanded="true" />
+                <element signature="e#5657#5658#0" expanded="true" />
+                <element signature="class#Subtraction#0" />
+                <element signature="e#5863#5864#0" expanded="true" />
+                <element signature="e#5913#5914#0" expanded="true" />
+                <element signature="class#Multiplication#0" />
+                <element signature="e#6125#6126#0" expanded="true" />
+                <element signature="e#6175#6176#0" expanded="true" />
+                <element signature="class#Division#0" />
+                <element signature="e#6379#6380#0" expanded="true" />
+                <element signature="e#6429#6430#0" expanded="true" />
+                <element signature="class#Variable#0" />
+                <element signature="e#6267#6268#0" expanded="true" />
+                <element signature="e#6305#6306#0" expanded="true" />
+                <element signature="e#6348#6349#0" expanded="true" />
+                <element signature="e#6395#6396#0" expanded="true" />
+                <element signature="class#Constant#0" />
+                <element signature="e#6475#6476#0" expanded="true" />
+                <element signature="e#6501#6502#0" expanded="true" />
+                <element signature="e#6544#6545#0" expanded="true" />
+                <element signature="e#6568#6569#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleCalcVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+            <state relative-caret-position="577">
+              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -153,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Environment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            <state relative-caret-position="270">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -167,7 +190,13 @@
       <find>cond</find>
       <find>simpleCalcVisitor</find>
       <find>if</find>
+      <find>simple</find>
+      <find>double</find>
+      <find>Double</find>
     </findStrings>
+    <replaceStrings>
+      <replace>AST</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,6 +209,7 @@
         <option value="$PROJECT_DIR$/simpleCalcVisitor.java" />
         <option value="$PROJECT_DIR$/simpleCalc_input.txt" />
         <option value="$PROJECT_DIR$/.floo" />
+        <option value="$PROJECT_DIR$/Environment.java" />
         <option value="$PROJECT_DIR$/simpleCalc.g4" />
         <option value="$PROJECT_DIR$/main.java" />
       </list>
@@ -215,7 +245,9 @@
     <option name="width" value="1002" />
     <option name="height" value="1057" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -228,11 +260,6 @@
               <item name="simpleCalc.v1.3" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleCalc.v1.3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="simpleCalc.v1.3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simpleCalc.v1.3" type="462c0819:PsiDirectoryNode" />
-              <item name="main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -244,7 +271,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539171042925" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539171543383" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -319,13 +346,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20260000" />
+    <option name="totallyTimeSpent" value="21050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1911" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19101124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19009584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -339,7 +366,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Tool Output" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -364,30 +391,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simpleCalcParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CPP14.g4" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleCalcVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -433,28 +441,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalcVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar!/org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalcParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="627" column="27" selection-start-line="627" selection-start-column="27" selection-end-line="627" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="423">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        <state relative-caret-position="286">
+          <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2275#2276#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+            <element signature="e#2382#2383#0" expanded="true" />
+            <element signature="e#2434#2435#0" expanded="true" />
             <element signature="method#visitCalculate#0;class#Interpreter#0" />
-            <element signature="e#2937#2938#0" expanded="true" />
-            <element signature="e#2975#2976#0" expanded="true" />
             <element signature="method#visitComparison#0;class#Interpreter#0" />
             <element signature="method#visitLogOp#0;class#Interpreter#0" />
+            <element signature="e#4355#4356#0" expanded="true" />
+            <element signature="e#4381#4382#0" expanded="true" />
+            <element signature="e#4448#4449#0" expanded="true" />
+            <element signature="e#4474#4475#0" expanded="true" />
+            <element signature="e#4539#4540#0" expanded="true" />
+            <element signature="e#4565#4566#0" expanded="true" />
+            <element signature="e#4640#4641#0" expanded="true" />
+            <element signature="e#4666#4667#0" expanded="true" />
+            <element signature="class#AST#0" />
+            <element signature="class#Assignment#0" />
+            <element signature="class#Addition#0" />
+            <element signature="e#5607#5608#0" expanded="true" />
+            <element signature="e#5657#5658#0" expanded="true" />
+            <element signature="class#Subtraction#0" />
+            <element signature="e#5863#5864#0" expanded="true" />
+            <element signature="e#5913#5914#0" expanded="true" />
+            <element signature="class#Multiplication#0" />
+            <element signature="e#6125#6126#0" expanded="true" />
+            <element signature="e#6175#6176#0" expanded="true" />
+            <element signature="class#Division#0" />
+            <element signature="e#6379#6380#0" expanded="true" />
+            <element signature="e#6429#6430#0" expanded="true" />
+            <element signature="class#Variable#0" />
+            <element signature="e#6267#6268#0" expanded="true" />
+            <element signature="e#6305#6306#0" expanded="true" />
+            <element signature="e#6348#6349#0" expanded="true" />
+            <element signature="e#6395#6396#0" expanded="true" />
+            <element signature="class#Constant#0" />
+            <element signature="e#6475#6476#0" expanded="true" />
+            <element signature="e#6501#6502#0" expanded="true" />
+            <element signature="e#6544#6545#0" expanded="true" />
+            <element signature="e#6568#6569#0" expanded="true" />
           </folding>
         </state>
       </provider>
