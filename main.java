@@ -159,7 +159,6 @@ class Assignment extends AST {
 }
 
 abstract class Expr extends AST {
-
 }
 
 class Addition extends Expr {
@@ -248,7 +247,10 @@ class Constant extends Expr {
     }
 }
 
-class Comparison extends Expr {
+abstract class Cond extends AST {
+}
+
+class Comparison extends Cond {
     public String d1;
     public String d2;
     public String bl;
@@ -279,7 +281,7 @@ class Comparison extends Expr {
     }
 }
 
-class LogOp extends Expr {
+class LogOp extends Cond {
 
     public double d1;
     public double d2;

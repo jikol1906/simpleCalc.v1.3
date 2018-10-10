@@ -2,40 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3880dc-4dd4-480c-95b4-121d9f783561" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Environment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Environment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$AssignContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$AssignContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$CalculateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$CalculateContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ComparisonContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ComparisonContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$CondContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$CondContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ConstantContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ConstantContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ExprContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$LogOpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$LogOpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ParenthesisContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ParenthesisContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ProgContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ProgContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StartContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StatementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StmtContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StmtsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StmtsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$VariableContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$VariableContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCalc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simpleCalc_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc_input.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -89,14 +60,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="floo" value="6" />
-          <entry key="java" value="399" />
-          <entry key="txt" value="3" />
+          <entry key="java" value="412" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="399" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="412" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -124,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
+            <state relative-caret-position="80">
+              <caret line="18" column="4" selection-start-line="18" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -133,56 +104,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+            <state relative-caret-position="349">
+              <caret line="285" column="9" lean-forward="true" selection-start-line="285" selection-start-column="9" selection-end-line="285" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2275#2276#0" expanded="true" />
-                <element signature="e#2310#2311#0" expanded="true" />
-                <element signature="e#2382#2383#0" expanded="true" />
-                <element signature="e#2434#2435#0" expanded="true" />
-                <element signature="e#3665#3666#0" expanded="true" />
-                <element signature="e#3692#3693#0" expanded="true" />
-                <element signature="e#4117#4118#0" expanded="true" />
-                <element signature="e#4143#4144#0" expanded="true" />
-                <element signature="e#3843#3844#0" expanded="true" />
-                <element signature="e#3870#3871#0" expanded="true" />
-                <element signature="e#3941#3942#0" expanded="true" />
-                <element signature="e#3964#3965#0" expanded="true" />
+                <element signature="method#main#0;class#main#0" />
+                <element signature="e#804#851#0" />
+                <element signature="class#Interpreter#0" />
+                <element signature="method#visitStart#0;class#Interpreter#0" />
+                <element signature="method#visitAssign#0;class#Interpreter#0" />
+                <element signature="method#visitCalculate#0;class#Interpreter#0" />
+                <element signature="method#visitConstant#0;class#Interpreter#0" />
+                <element signature="method#visitComparison#0;class#Interpreter#0" />
+                <element signature="method#visitLogOp#0;class#Interpreter#0" />
                 <element signature="class#AST#0" />
+                <element signature="class#Start#0" />
+                <element signature="method#Start#0;class#Start#0" />
+                <element signature="method#eval#0;class#Start#0" />
                 <element signature="class#Assignment#0" />
-                <element signature="e#5008#5009#0" expanded="true" />
-                <element signature="e#5037#5038#0" expanded="true" />
+                <element signature="method#Assignment#0;class#Assignment#0" />
+                <element signature="method#eval#0;class#Assignment#0" />
+                <element signature="class#Addition#0" />
+                <element signature="method#Addition#0;class#Addition#0" />
+                <element signature="method#eval#0;class#Addition#0" />
                 <element signature="class#Subtraction#0" />
-                <element signature="e#5863#5864#0" expanded="true" />
-                <element signature="e#5913#5914#0" expanded="true" />
+                <element signature="method#Subtraction#0;class#Subtraction#0" />
                 <element signature="class#Multiplication#0" />
-                <element signature="e#6125#6126#0" expanded="true" />
-                <element signature="e#6175#6176#0" expanded="true" />
+                <element signature="method#Multiplication#0;class#Multiplication#0" />
                 <element signature="class#Division#0" />
-                <element signature="e#6379#6380#0" expanded="true" />
-                <element signature="e#6429#6430#0" expanded="true" />
+                <element signature="method#Division#0;class#Division#0" />
                 <element signature="class#Variable#0" />
-                <element signature="e#6267#6268#0" expanded="true" />
-                <element signature="e#6305#6306#0" expanded="true" />
-                <element signature="e#6348#6349#0" expanded="true" />
-                <element signature="e#6395#6396#0" expanded="true" />
                 <element signature="class#Constant#0" />
-                <element signature="e#6475#6476#0" expanded="true" />
-                <element signature="e#6501#6502#0" expanded="true" />
-                <element signature="e#6544#6545#0" expanded="true" />
-                <element signature="e#6568#6569#0" expanded="true" />
-                <element signature="class#Comparation#0" />
+                <element signature="class#Comparison#0" />
+                <element signature="method#Comparison#0;class#Comparison#0" />
+                <element signature="method#eval#0;class#Comparison#0" />
+                <element signature="method#LogOp#0;class#LogOp#0" />
+                <element signature="method#eval#0;class#LogOp#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -191,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -242,8 +199,8 @@
         <option value="$PROJECT_DIR$/.floo" />
         <option value="$PROJECT_DIR$/Environment.java" />
         <option value="$PROJECT_DIR$/simpleCalc.g4" />
-        <option value="$PROJECT_DIR$/simpleCalc_input.txt" />
         <option value="$PROJECT_DIR$/main.java" />
+        <option value="$PROJECT_DIR$/simpleCalc_input.txt" />
       </list>
     </option>
   </component>
@@ -277,6 +234,74 @@
     <option name="width" value="1002" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>AccessibilityLintAndroid</id>
+          </State>
+          <State>
+            <id>ActionScript specificJavaScript</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>SecurityLintAndroid</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>UsabilityLintAndroid</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>WeakerAccess</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -303,14 +328,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539175443385" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539176492261" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -333,6 +358,14 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="simpleCalc.v1.3" />
+      <option name="PROGRAM_PARAMETERS" value="simpleCalc_input.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -360,6 +393,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -378,33 +416,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23593000" />
+    <option name="totallyTimeSpent" value="24627000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19009584" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49912128" weight="0.2553648" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Structure" order="6" sideWeight="0.50087875" visible="true" weight="0.2553648" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.3299363" />
+      <window_info anchor="bottom" id="Messages" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32866243" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27515924" />
       <window_info anchor="bottom" id="Tool Output" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.35478806" />
-      <window_info anchor="bottom" id="Floobits" order="13" weight="0.32953367" />
+      <window_info anchor="bottom" id="Floobits" order="13" weight="0.32866243" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -428,13 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -491,20 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleCalcBaseVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -512,48 +530,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalc.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="18" column="4" selection-start-line="18" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleCalc_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+        <state relative-caret-position="349">
+          <caret line="285" column="9" lean-forward="true" selection-start-line="285" selection-start-column="9" selection-end-line="285" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2275#2276#0" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
-            <element signature="e#2382#2383#0" expanded="true" />
-            <element signature="e#2434#2435#0" expanded="true" />
-            <element signature="e#3665#3666#0" expanded="true" />
-            <element signature="e#3692#3693#0" expanded="true" />
-            <element signature="e#4117#4118#0" expanded="true" />
-            <element signature="e#4143#4144#0" expanded="true" />
-            <element signature="e#3843#3844#0" expanded="true" />
-            <element signature="e#3870#3871#0" expanded="true" />
-            <element signature="e#3941#3942#0" expanded="true" />
-            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="method#main#0;class#main#0" />
+            <element signature="e#804#851#0" />
+            <element signature="class#Interpreter#0" />
+            <element signature="method#visitStart#0;class#Interpreter#0" />
+            <element signature="method#visitAssign#0;class#Interpreter#0" />
+            <element signature="method#visitCalculate#0;class#Interpreter#0" />
+            <element signature="method#visitConstant#0;class#Interpreter#0" />
+            <element signature="method#visitComparison#0;class#Interpreter#0" />
+            <element signature="method#visitLogOp#0;class#Interpreter#0" />
             <element signature="class#AST#0" />
+            <element signature="class#Start#0" />
+            <element signature="method#Start#0;class#Start#0" />
+            <element signature="method#eval#0;class#Start#0" />
             <element signature="class#Assignment#0" />
-            <element signature="e#5008#5009#0" expanded="true" />
-            <element signature="e#5037#5038#0" expanded="true" />
+            <element signature="method#Assignment#0;class#Assignment#0" />
+            <element signature="method#eval#0;class#Assignment#0" />
+            <element signature="class#Addition#0" />
+            <element signature="method#Addition#0;class#Addition#0" />
+            <element signature="method#eval#0;class#Addition#0" />
             <element signature="class#Subtraction#0" />
-            <element signature="e#5863#5864#0" expanded="true" />
-            <element signature="e#5913#5914#0" expanded="true" />
+            <element signature="method#Subtraction#0;class#Subtraction#0" />
             <element signature="class#Multiplication#0" />
-            <element signature="e#6125#6126#0" expanded="true" />
-            <element signature="e#6175#6176#0" expanded="true" />
+            <element signature="method#Multiplication#0;class#Multiplication#0" />
             <element signature="class#Division#0" />
-            <element signature="e#6379#6380#0" expanded="true" />
-            <element signature="e#6429#6430#0" expanded="true" />
+            <element signature="method#Division#0;class#Division#0" />
             <element signature="class#Variable#0" />
-            <element signature="e#6267#6268#0" expanded="true" />
-            <element signature="e#6305#6306#0" expanded="true" />
-            <element signature="e#6348#6349#0" expanded="true" />
-            <element signature="e#6395#6396#0" expanded="true" />
             <element signature="class#Constant#0" />
-            <element signature="e#6475#6476#0" expanded="true" />
-            <element signature="e#6501#6502#0" expanded="true" />
-            <element signature="e#6544#6545#0" expanded="true" />
-            <element signature="e#6568#6569#0" expanded="true" />
-            <element signature="class#Comparation#0" />
+            <element signature="class#Comparison#0" />
+            <element signature="method#Comparison#0;class#Comparison#0" />
+            <element signature="method#eval#0;class#Comparison#0" />
+            <element signature="method#LogOp#0;class#LogOp#0" />
+            <element signature="method#eval#0;class#LogOp#0" />
           </folding>
         </state>
       </provider>

@@ -29,7 +29,6 @@ expr: e1=expr op=OP1 e2=expr # Calculate
 	| x=ID            # Variable
 	| '(' e=expr ')'  # Parenthesis
 	| stmts #Statement
-
 	;
 
 OP1 : ('*'|'/') ;
