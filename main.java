@@ -96,23 +96,7 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
     }
 
     public AST visitComparison(simpleCalcParser.ComparisonContext ctx) {
-
-        try {
-            int e1 = Integer.parseInt(ctx.e1.getText());
-            int e2 = Integer.parseInt(ctx.e2.getText());
-            switch (ctx.op.getText()) {
-                case "==":
-                    return e1 == e2 ? 1.0 : 0.0;
-                case "!=":
-                    return e1 != e2 ? 1.0 : 0.0;
-                default:
-                    return 0.0;
-            }
-
-        } catch (NumberFormatException ex) {
-                return 0.0;
-        }
-
+        return new Comparison(ctx.e1.getText(), ctx.e2.getText(), ctx.op.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
     }
 
     public AST visitLogOp(simpleCalcParser.LogOpContext ctx) {
@@ -123,13 +107,13 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
                 case "&&":
                     return e1 - e2 == 0.0 ? 1.0 : 0.0;
                 case "||":
-                    return e1==1.0 || e2==1.0 ? 1.0 : 0.0;
+                    return e1 == 1.0 || e2 == 1.0 ? 1.0 : 0.0;
                 default:
                     return 0.0;
             }
 
         } catch (NumberFormatException ex) {
-                return 2.0;
+            return 2.0;
 
         }
 
@@ -271,5 +255,36 @@ class Constant extends Expr {
 
     public double eval(Environment env) {
         return d;
+    }
+}
+
+class Comparison extends Expr {
+    public String d1;
+    public String d2;
+    public String bl;
+
+    public Comparison(String d1, String d2, String bl) {
+        this.d1 = d1;
+        this.d2 = d2;
+        this.bl = bl;
+    }
+
+    public double eval(Environment env) {
+        try {
+            double e1 = Double.parseDouble(d1);
+            double e2 = Double.parseDouble(d2);
+            switch (bl) {
+                case "==":
+                    return e1 == e2 ? 1.0 : 0.0;
+                case "!=":
+                    return e1 != e2 ? 1.0 : 0.0;
+                default:
+                    return 0.0;
+            }
+
+        } catch (NumberFormatException ex) {
+            return 0.0;
+        }
+
     }
 }
