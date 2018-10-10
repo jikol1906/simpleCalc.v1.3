@@ -90,17 +90,16 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
     }
 
+    public String visitVar(simpleCalcParser.VarContext ctx) {
+        return ctx.getText();
+    }
 
-    public Double visitVar(simpleCalcParser.VarContext ctx) {
-
-        //return Double.parseDouble(ctx.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-
-        return 1.0;
+    public Double visitVar(String sfr) {
+        return sfr;
     }
 
     public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
         return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-
     }
 
     public Double visitComparison(simpleCalcParser.ComparisonContext ctx) {
@@ -122,7 +121,6 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
         }
 
     }
-
 
     public Double visitLogOp(simpleCalcParser.LogOpContext ctx) {
         try {
