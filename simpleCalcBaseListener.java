@@ -27,18 +27,6 @@ public class simpleCalcBaseListener implements simpleCalcListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssign(simpleCalcParser.AssignContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitAssign(simpleCalcParser.AssignContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterProg(simpleCalcParser.ProgContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -70,6 +58,18 @@ public class simpleCalcBaseListener implements simpleCalcListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitStmts(simpleCalcParser.StmtsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAssign(simpleCalcParser.AssignContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAssign(simpleCalcParser.AssignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -130,18 +130,6 @@ public class simpleCalcBaseListener implements simpleCalcListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitConstant(simpleCalcParser.ConstantContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterVar(simpleCalcParser.VarContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitVar(simpleCalcParser.VarContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

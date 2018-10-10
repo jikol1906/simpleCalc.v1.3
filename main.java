@@ -62,8 +62,8 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
 
     public AST visitAssign(simpleCalcParser.AssignContext ctx) {
         AST d = visit(ctx.e);
-        env.setVariable(ctx.x.getText(), d);
-        return d;
+       // env.setVariable(ctx.x.getText());
+        return null;
     }
 
     public AST visitParenthesis(simpleCalcParser.ParenthesisContext ctx) {
@@ -80,7 +80,7 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
 
         switch (ctx.op.getText()) {
             case "+":
-                return new Addition((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
+                return new Addition(Double.parseDouble(ctx.e1.getText()), Double.parseDouble(ctx.e2.getText()));
             case "*":
                 return new Multiplication((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
             case "-":
@@ -100,39 +100,23 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
     }
 
     public AST visitLogOp(simpleCalcParser.LogOpContext ctx) {
-        try {
-            AST e1 = Double.parseDouble(ctx.e1.getText());
-            AST e2 = Double.parseDouble(ctx.e2.getText());
-            switch (ctx.op.getText()) {
-                case "&&":
-                    return e1 - e2 == 0.0 ? 1.0 : 0.0;
-                case "||":
-                    return e1 == 1.0 || e2 == 1.0 ? 1.0 : 0.0;
-                default:
-                    return 0.0;
-            }
-
-        } catch (NumberFormatException ex) {
-            return 2.0;
-
-        }
-
+        return new LogOp(ctx.e1.getText(), ctx.e2.getText(), ctx.op.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
     }
 
     public AST visitStmt(simpleCalcParser.StmtContext ctx) {
-        return 1.0;
+        return null;
     }
 
     public AST visitStmts(simpleCalcParser.StmtsContext ctx) {
-        return 1.0;
+        return null;
     }
 
     public AST visitProg(simpleCalcParser.ProgContext ctx) {
-        return 1.0;
+        return null;
     }
 
     public AST visitStatement(simpleCalcParser.StatementContext ctx) {
-        return 1.0;
+        return null;
     }
 
 
@@ -179,16 +163,22 @@ abstract class Expr extends AST {
 }
 
 class Addition extends Expr {
-    public Expr e1;
-    public Expr e2;
+    public double e1;
+    public double e2;
 
-    Addition(Expr e1, Expr e2) {
+    Addition(Double e1, Double e2) {
         this.e1 = e1;
         this.e2 = e2;
     }
 
     public double eval(Environment env) {
-        return e1.eval(env) + e2.eval(env);
+        //return e1.eval(env) + e2.eval(env);
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return e1 + e2 + "";
     }
 }
 
@@ -284,6 +274,37 @@ class Comparison extends Expr {
 
         } catch (NumberFormatException ex) {
             return 0.0;
+        }
+
+    }
+}
+
+class LogOp extends Expr {
+
+    public double d1;
+    public double d2;
+    public String bl;
+
+    public LogOp(String d1, String d2, String bl) {
+        this.d1 = Double.parseDouble(d1);
+        this.d2 = Double.parseDouble(d2);
+        this.bl = bl;
+    }
+
+    public double eval(Environment env) {
+        try {
+            switch (bl) {
+                case "&&":
+                    return d1 - d2 == 0.0 ? 1.0 : 0.0;
+                case "||":
+                    return d1 == 1.0 || d2 == 1.0 ? 1.0 : 0.0;
+                default:
+                    return 0.0;
+            }
+
+        } catch (NumberFormatException ex) {
+            return 2.0;
+
         }
 
     }
