@@ -52,7 +52,7 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     static Environment env = new Environment();
 
     public Double visitStart(simpleCalcParser.StartContext ctx) {
-        for (simpleCalcParser.AssignContext a : ctx.as) {
+        for (simpleCalcParser.ProgContext a : ctx.as) {
             visit(a);
         }
         return visit(ctx.e);
@@ -92,10 +92,6 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
     public String visitVar(simpleCalcParser.VarContext ctx) {
         return ctx.getText();
-    }
-
-    public Double visitVar(String sfr) {
-        return sfr;
     }
 
     public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
