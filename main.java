@@ -59,10 +59,13 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
         return visit(ctx.e);
     }
 
-
     public AST visitAssign(simpleCalcParser.AssignContext ctx) {
         AST d = visit(ctx.e);
        // env.setVariable(ctx.x.getText());
+        return null;
+    }
+
+    public AST visitProg(simpleCalcParser.ProgContext ctx) {
         return null;
     }
 
@@ -74,7 +77,6 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
     public AST visitVariable(simpleCalcParser.VariableContext ctx) {
         return new Variable(ctx.x.getText());
     }
-
 
     public AST visitCalculate(simpleCalcParser.CalculateContext ctx) {
 
@@ -91,33 +93,6 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
 
     }
 
-    public AST visitConstant(simpleCalcParser.ConstantContext ctx) {
-        return new Constant(Double.parseDouble(ctx.n.getText())); // new Double(ctx.NUM()); // Integer.parseInt(string);
-    }
-
-    public AST visitComparison(simpleCalcParser.ComparisonContext ctx) {
-        return new Comparison(ctx.e1.getText(), ctx.e2.getText(), ctx.op.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-    }
-
-    public AST visitLogOp(simpleCalcParser.LogOpContext ctx) {
-        return new LogOp(ctx.e1.getText(), ctx.e2.getText(), ctx.op.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-    }
-
-    public AST visitStmt(simpleCalcParser.StmtContext ctx) {
-        return null;
-    }
-
-    public AST visitStmts(simpleCalcParser.StmtsContext ctx) {
-        return null;
-    }
-
-    public AST visitProg(simpleCalcParser.ProgContext ctx) {
-        return null;
-    }
-
-    public AST visitStatement(simpleCalcParser.StatementContext ctx) {
-        return null;
-    }
 
 
 }

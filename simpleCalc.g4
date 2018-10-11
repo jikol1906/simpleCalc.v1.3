@@ -2,18 +2,17 @@ grammar simpleCalc;
  
 start   : as+=prog*   e=expr EOF ;
 
-
+assign  : x=ID '=' e=expr ;
 
 prog : stmt ;
 
 stmt:
      IF '(' cond ')' prog
     | WHILE '('cond')' prog
-   | ID '=' expr
+    | ID '=' expr
     ;
 
 stmts: stmt  ;
-assign  : x=ID '=' e=expr ;
 
 
 cond:     e1=expr  op='==' e2=expr #Comparison
