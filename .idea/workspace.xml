@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f3880dc-4dd4-480c-95b4-121d9f783561" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AST.class" beforeDir="false" afterPath="$PROJECT_DIR$/AST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Addition.class" beforeDir="false" afterPath="$PROJECT_DIR$/Addition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison.class" beforeDir="false" afterPath="$PROJECT_DIR$/Comparison.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Division.class" beforeDir="false" afterPath="$PROJECT_DIR$/Division.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/Expr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/LogOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multiplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Subtraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/Subtraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/Variable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$AssignContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$AssignContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$ProgContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$ProgContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StmtContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser$StmtsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser$StmtsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalcVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalcVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleCalc_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/simpleCalc_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Addition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Addition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Assignment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Comparison.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Comparison.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cond.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cond.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Division.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Division.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Expr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Multiplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Multiplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Subtraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Subtraction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Variable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcParser$AssignContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcParser$AssignContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcParser$ProgContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcParser$ProgContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcParser$StmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcParser$StmtContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcParser$StmtsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcParser$StmtsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simpleCalcVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simpleCalcVisitor.class" afterDir="false" />
-    </list>
+    <list default="true" id="4f3880dc-4dd4-480c-95b4-121d9f783561" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,7 +87,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -410,7 +343,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539285843697" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539286742659" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
