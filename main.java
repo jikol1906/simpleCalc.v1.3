@@ -4,6 +4,7 @@ import org.antlr.v4.runtime.tree.*;
 import org.antlr.v4.runtime.CharStreams;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class main {
@@ -39,7 +40,7 @@ public class main {
         Interpreter interpreter = new Interpreter();
         AST result = interpreter.visit(parseTree);
 
-        System.out.println("The result is: " + result);
+        System.out.println("The result is: " + result.eval(new Environment()));
     }
 }
 
@@ -53,19 +54,39 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
     static Environment env = new Environment();
 
     public AST visitStart(simpleCalcParser.StartContext ctx) {
+        List<Assignment> assigns = new ArrayList<Assignment>();
+
         for (simpleCalcParser.ProgContext a : ctx.as) {
-            visit(a);
+            assigns.add((Assignment) visit(a));
         }
-        return visit(ctx.e);
+        return new Start(assigns, (Expr) visit(ctx.e));
     }
 
     public AST visitAssign(simpleCalcParser.AssignContext ctx) {
-        AST d = visit(ctx.e);
-       // env.setVariable(ctx.x.getText());
-        return null;
+        return new Assignment(ctx.x.getText(), (Expr) visit(ctx.e));
     }
 
     public AST visitProg(simpleCalcParser.ProgContext ctx) {
+        return null;
+    }
+
+    @Override
+    public AST visitStmt(simpleCalcParser.StmtContext ctx) {
+        return null;
+    }
+
+    @Override
+    public AST visitStmts(simpleCalcParser.StmtsContext ctx) {
+        return null;
+    }
+
+    @Override
+    public AST visitComparison(simpleCalcParser.ComparisonContext ctx) {
+        return null;
+    }
+
+    @Override
+    public AST visitLogOp(simpleCalcParser.LogOpContext ctx) {
         return null;
     }
 
@@ -73,16 +94,25 @@ class Interpreter extends AbstractParseTreeVisitor<AST> implements simpleCalcVis
         return visit(ctx.e);
     }
 
-
     public AST visitVariable(simpleCalcParser.VariableContext ctx) {
         return new Variable(ctx.x.getText());
+    }
+
+    @Override
+    public AST visitConstant(simpleCalcParser.ConstantContext ctx) {
+        return null;
+    }
+
+    @Override
+    public AST visitStatement(simpleCalcParser.StatementContext ctx) {
+        return null;
     }
 
     public AST visitCalculate(simpleCalcParser.CalculateContext ctx) {
 
         switch (ctx.op.getText()) {
             case "+":
-                return new Addition(Double.parseDouble(ctx.e1.getText()), Double.parseDouble(ctx.e2.getText()));
+                return new Addition((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
             case "*":
                 return new Multiplication((Expr) visit(ctx.e1), (Expr) visit(ctx.e2));
             case "-":
@@ -137,23 +167,24 @@ abstract class Expr extends AST {
 }
 
 class Addition extends Expr {
-    public double e1;
-    public double e2;
+    public Expr e1;
+    public Expr e2;
+    //static public double result;
 
-    Addition(Double e1, Double e2) {
+    Addition(Expr e1, Expr e2) {
         this.e1 = e1;
         this.e2 = e2;
     }
 
-    public double eval(Environment env) {
-        //return e1.eval(env) + e2.eval(env);
-        return 0;
-    }
 
+    public double eval(Environment env) {
+        return e1.eval(env) + e2.eval(env);
+    }
+/*
     @Override
     public String toString() {
-        return e1 + e2 + "";
-    }
+        return result + "";
+    }*/
 }
 
 class Subtraction extends Expr {
