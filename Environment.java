@@ -2,7 +2,8 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 class Environment {
-    private HashMap<String,Double> variableValues = new HashMap<String,Double>();
+
+     HashMap<String,Double> variableValues = new HashMap<String,Double>();
     public Environment() { }	
     public void setVariable(String name, Double value) {
 	variableValues.put(name, value);
@@ -15,7 +16,7 @@ class Environment {
     }
     
     public String toString() {
-	String table = "";
+	String table = " ";
 	for (Entry<String,Double> entry : variableValues.entrySet()) {
 	    table += entry.getKey() + "\t-> " + entry.getValue() + "\n";
 	}
