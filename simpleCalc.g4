@@ -1,23 +1,21 @@
 grammar simpleCalc;
  
-start   : as+=assign*   sts+=stmt* e=expr+ EOF ;
+start: as+=assign*  sts+=stmt* e=expr+ EOF ;
 
-assign  : x=ID '=' e=expr  ;
-
-
-
-stmt:
-     'if' '('c=cond')' e1=expr 'else'  e2=expr  #IfStatment
-    | 'while' '('c=cond')' e=expr #WhileStatment
-    ;
+assign: x=ID '=' e=expr  ;
 
 
-cond: 	       e1=expr  op='==' e2=expr #Comparison
-              | e1=expr op='!=' e2=expr #Comparison
-              | e1=expr op='&&' e2=expr #LogOp
-              | e1=expr op='||' e2=expr #LogOp
 
-;
+stmt: 'if' '('c=cond')' e1=expr 'else'  e2=expr  #IfStatment
+     | 'while' '('c=cond')' e=expr #WhileStatment
+     ;
+
+
+cond: e1=expr  op='==' e2=expr #Comparison
+     | e1=expr op='!=' e2=expr #Comparison
+     | e1=expr op='&&' e2=expr #LogOp
+     | e1=expr op='||' e2=expr #LogOp
+     ;
 
 expr: e1=expr op=OP1 e2=expr # Calculate
     | e1=expr op=OP2 e2=expr # Calculate
