@@ -37,7 +37,6 @@ public class main {
         // Construct an interpreter and run it on the parse tree
         Interpreter interpreter = new Interpreter();
         Double result = interpreter.visit(parseTree);
-        System.out.println("Enviorment: \n " + interpreter.toString());
 
         System.out.println("\nThe result is: " + result);
 
@@ -119,10 +118,11 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
     public Double visitComparison(simpleCalcParser.ComparisonContext ctx) {
 
         try {
-            /*int e1 = Integer.parseInt(ctx.e1.getText());
-            int e2 = Integer.parseInt(ctx.e2.getText());*/
+            int e1 = Integer.parseInt(ctx.e1.getText());
+            int e2 = Integer.parseInt(ctx.e2.getText());
+            /*
             Double e1 = visit(ctx.e1);
-            Double e2 = visit(ctx.e2);
+            Double e2 = visit(ctx.e2);*/
             switch (ctx.op.getText()) {
                 case "==":
                     return e1 == e2 ? 1.0 : 0.0;
