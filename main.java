@@ -81,11 +81,9 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
         return visit(ctx.e);
     }
 
-
     public Double visitVariable(simpleCalcParser.VariableContext ctx) {
         return env.getVariable(ctx.x.getText());
     }
-
 
     public Double visitCalculate(simpleCalcParser.CalculateContext ctx) {
 
@@ -101,14 +99,6 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
         }
 
     }
-
-
-   /* public Double visitVar(simpleCalcParser.VarContext ctx) {
-
-        //return Double.parseDouble(ctx.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
-
-        return 1.0;
-    }*/
 
     public Double visitConstant(simpleCalcParser.ConstantContext ctx) {
         return Double.parseDouble(ctx.n.getText()); // new Double(ctx.NUM()); // Integer.parseInt(string);
@@ -138,25 +128,16 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
     }
 
-
     public Double visitLogOp(simpleCalcParser.LogOpContext ctx) {
         return 1.0;
     }
 
-   /* public Double visitStmt(simpleCalcParser.StmtContext ctx) {
-        if( visit(ctx.c)==1.0){
-            return visit(ctx.e1);
-        }
-        return visit(ctx.e2);
-
-    }*/
     public Double visitIfStatment(simpleCalcParser.IfStatmentContext ctx) {
         if( visit(ctx.c)==1.0){
             return visit(ctx.e1);
         }
         return visit(ctx.e2);
     }
-
 
     public Double visitWhileStatment(simpleCalcParser.WhileStatmentContext ctx) {
         while ( visit(ctx.c)==1.0){
@@ -181,20 +162,6 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
 
 }
 
-
-/*
-    public Double visitStmts(simpleCalcParser.StmtsContext ctx) {
-        return 1.0;
-    }*/
-/*
-    public Double visitProg(simpleCalcParser.ProgContext ctx) {
-        return 1.0;
-    }*/
-
-    /*public Double visitStatement(simpleCalcParser.StatementContext ctx) {
-        return 1.0;
-    }
-*/
     public String toString(){
         return  " "+env.toString();
 
