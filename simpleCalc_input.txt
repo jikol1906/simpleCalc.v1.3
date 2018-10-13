@@ -1,4 +1,5 @@
-f=7
-if(3==3) x=50 else x=4
+x=2
 
-f+x
+if(3<2) x=x+x else 10
+
+x

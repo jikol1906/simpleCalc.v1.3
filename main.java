@@ -118,6 +118,10 @@ class Interpreter extends AbstractParseTreeVisitor<Double> implements simpleCalc
                     return e1 == e2 ? 1.0 : 0.0;
                 case "!=":
                     return e1 != e2 ? 1.0 : 0.0;
+                case ">":
+                    return e1 > e2 ? 1.0 : 0.0;
+                case "<":
+                    return e1 < e2 ? 1.0 : 0.0;
                 default:
                     return 0.0;
             }

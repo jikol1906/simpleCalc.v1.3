@@ -13,6 +13,8 @@ stmt: 'if' '('c=cond')' e1=expr 'else'  e2=expr  #IfStatment
 
 cond: e1=expr  op='==' e2=expr #Comparison
      | e1=expr op='!=' e2=expr #Comparison
+     | e1=expr op='>' e2=expr #Comparison
+     | e1=expr op='<' e2=expr #Comparison
      | e1=expr op='&&' e2=expr #LogOp
      | e1=expr op='||' e2=expr #LogOp
      ;
