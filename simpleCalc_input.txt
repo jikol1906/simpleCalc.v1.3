@@ -1,5 +1,5 @@
 x=2
 
-if(3<2) x=x+x else 10
+if(3<2) x=x+x else x=10
 
 x

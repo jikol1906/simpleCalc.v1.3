@@ -6,7 +6,8 @@ assign: x=ID '=' e=expr  ;
 
 
 
-stmt: 'if' '('c=cond')' e1=expr 'else'  e2=expr  #IfStatment
+stmt:  'if' '('c=cond')' e1=expr 'else'  e2=expr  #IfStatment
+     | 'if' '('c=cond')' e1=expr  #IfStatment
      | 'while' '('c=cond')' e=expr #WhileStatment
      ;
 
