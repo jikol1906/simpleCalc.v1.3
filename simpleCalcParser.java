@@ -259,7 +259,7 @@ public class simpleCalcParser extends Parser {
 	}
 	public static class WhileStatmentContext extends StmtContext {
 		public CondContext c;
-		public ExprContext e;
+		public ExprContext e1;
 		public CondContext cond() {
 			return getRuleContext(CondContext.class,0);
 		}
@@ -366,7 +366,7 @@ public class simpleCalcParser extends Parser {
 				setState(50);
 				match(T__3);
 				setState(51);
-				((WhileStatmentContext)_localctx).e = expr(0);
+				((WhileStatmentContext)_localctx).e1 = expr(0);
 				}
 				break;
 			}
